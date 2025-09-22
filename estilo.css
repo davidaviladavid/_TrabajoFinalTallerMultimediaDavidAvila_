@@ -1,56 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-    
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
 }
 
-div {
+#historia {
 font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 100px;
+  font-size: 120px;
+  text-align: center;
+  cursor: pointer;
 }
-
-#pequeño {
-font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 60px;    
-}
-.relative {
-	position: relative;
-}
-
-.full-height {
-	height: 100vh;
-}
-
-.flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-.slide {
-	background-color: rgb(255, 255, 255);
-}
-
-
-
-
-
-.active {
-	background-color: rgb(171, 170, 170);
+#historia:hover {
+  color: red;
 }
