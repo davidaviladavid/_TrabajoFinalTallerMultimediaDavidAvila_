@@ -35,7 +35,8 @@ const historia= [
      "No me arrepiento de nada, fue una buena vida.",
      "Me alegra haberla compartido contigo.",
      "Espero que no me olvides.",
-     "Te quiero mucho."
+     "Te quiero mucho.",
+     "Apenas des click me iré :,)"
 ];
 
 let indice = 0 
@@ -46,10 +47,10 @@ divHistoria.addEventListener("click", () => {
      divHistoria.textContent = historia[indice];
      indice++;
  } else {
-     divHistoria.textContent = "Adiós :,)";
+     divHistoria.textContent = "Adiós.";
      setTimeout (() => {
           location.reload();
-    }, 2000);
+    }, 1450);
 
  }
 });
