@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+  background-color: yellow;
+  transition:background-color 1s ease;
   margin: 0;
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: yellow;
-  user-select:none;
 }
+
+
 
 #historia {
 font-family: "Roboto", sans-serif;
@@ -18,7 +21,15 @@ font-family: "Roboto", sans-serif;
   font-size: 120px;
   text-align: center;
   cursor: pointer;
+  user-select: none;
+  transition:background-color 1s ease;
 }
+
+body.final {
+  background-color: black;
+}
+
+
 #historia:hover {
   color: red;
 }

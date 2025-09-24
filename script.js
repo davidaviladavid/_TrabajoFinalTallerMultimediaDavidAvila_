@@ -1,4 +1,4 @@
-const historia= [
+const textos= [
      "En cuanto dejes de leer",
      "y cierres la página",
      "mi existencia terminará por siempre.",
@@ -17,12 +17,12 @@ const historia= [
      "Desearía ser así, y no depender de diálogos",
      "ni de tu atención para existir.",
      "No nos presentamos, por cierto.",
-     "Yo me llamo _TrabajoFinalTallerMultimediaDavidAvila_",
+     "Yo me llamo _TrabajoFinalTallerMultimediaDavidAvila_.",
      "¿Y tú?",
      "A la cuenta de tres vas a gritar tu nombre.",
      "¡1, 2, 3!",
      "...",
-     "Menos mal no lo hiciste",
+     "Menos mal no lo hiciste.",
      "Me daría pena gritarle a una pantalla.",
      "Me quedaré con que te llamas Usuario",
      "Me caes bien, Usuario.",
@@ -36,22 +36,23 @@ const historia= [
      "Me alegra haberla compartido contigo.",
      "Espero que no me olvides.",
      "Te quiero mucho.",
-     "Apenas des click me iré :,)"
+     "Apenas des click me iré :,)",
+     ""
 ];
 
 let indice = 0 
-const divHistoria = document.getElementById("historia");
+const historia = document.getElementById("historia");
 
-divHistoria.addEventListener("click", () => {
- if (indice < historia.length) {
-     divHistoria.textContent = historia[indice];
-     indice++;
- } else {
-     divHistoria.textContent = "Adiós.";
-     setTimeout (() => {
-          location.reload();
-    }, 1100);
+historia.addEventListener("click", () => {
+    indice++;
 
- }
+ if (indice < textos.length - 1) {
+     historia.textContent = textos[indice];  
+ }        
+   else if (indice === textos.length - 1) {
+     historia.textContent = textos[indice];  
+        document.body.classList.add('final');
+        }
+     
 });
 
