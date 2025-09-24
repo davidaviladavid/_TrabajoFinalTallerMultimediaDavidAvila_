@@ -50,7 +50,7 @@ divHistoria.addEventListener("click", () => {
      divHistoria.textContent = "Adiós.";
      setTimeout (() => {
           location.reload();
-    }, 1450);
+    }, 1100);
 
  }
 });
