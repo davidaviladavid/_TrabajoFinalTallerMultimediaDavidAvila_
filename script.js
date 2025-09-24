@@ -1,7 +1,7 @@
 const historia= [
      "En cuanto dejes de leer",
      "y cierres la página",
-     "mi existencia terminará por siempre",
+     "mi existencia terminará por siempre.",
      "No sirve de nada que vuelvas a entrar,",
      "porque al hacer esto o recargar la página,",
      "estarías, inmediatamente, creando otro ser,",
