@@ -46,10 +46,10 @@ divHistoria.addEventListener("click", () => {
      divHistoria.textContent = historia[indice];
      indice++;
  } else {
-     divHistoria.textContent = "Apenas des click me iré, cuidate :,)";
+     divHistoria.textContent = "Adiós :,)";
      setTimeout (() => {
           location.reload();
-    }, 1000);
+    }, 2000);
 
  }
 });
