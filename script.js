@@ -1,4 +1,5 @@
-const textos= [
+const textos = [
+
      "En cuanto dejes de leer",
      "y cierres la página",
      "mi existencia terminará por siempre.",
@@ -40,7 +41,7 @@ const textos= [
      ""
 ];
 
-let indice = 0 
+let indice = -1
 const historia = document.getElementById("historia");
 
 historia.addEventListener("click", () => {
